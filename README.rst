@@ -14,6 +14,7 @@ Installing
 Install with pip:
 
 ::
+
     $pip install pyxml2dict
 
 Usage
