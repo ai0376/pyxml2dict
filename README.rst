@@ -8,7 +8,15 @@ pyxml2dict is licensed under the GPL-3.0
 
 Prefix the attribute in the dictionary @attribute , the value corresponding to key is #text
 
-Example
+
+Installing
+===============
+Install with pip:
+
+::
+    $pip install pyxml2dict
+
+Usage
 ===============
 
 ::
@@ -36,4 +44,4 @@ Example
 Thanks
 ===============
 
-In XML2Dict , *_parse_node* algorithm comes from https://github.com/undefine1995/xml2dict,  It's very useful. Thanks  undefine1994.
+In XML2Dict , *_parse_node* algorithm comes from https://github.com/undefine1995/xml2dict,  It's very useful. Thanks for undefine1994.

@@ -8,10 +8,11 @@ from distutils.core import setup
 
 setup(
     name='pyxml2dict',
-    version='0.0.1',
+    version='1.0.0',
     author='mjrao',
     author_email='mjrao520@gmail.com',
     description='Convert XML to python Dict',
     long_description=open("README.rst").read(),
+    py_modules=['pyxml2dict'],
     url='https://github.com/mjrao/pyxml2dict'
 )
