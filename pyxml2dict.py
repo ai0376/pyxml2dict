@@ -23,7 +23,7 @@ class XML2Dict(object):
             for dc in map(self._parse_node, children):  # recursive traverse processing tree
                 for k, v in dc.iteritems():
                     dd[k].append(v)
-            d = {t.tag: {k: v[0] if len(v) == 1 else v for k, v in dd.iteritems()}}  # 对叶子节点的处理情况
+            d = {t.tag: {k: v[0] if len(v) == 1 else v for k, v in dd.iteritems()}}  # handle child node
         if t.attrib:  # handle attributes,prefix all of the stored attributes @
             d[t.tag].update(('@' + k, v) for k, v in t.attrib.iteritems())
         if t.text:
