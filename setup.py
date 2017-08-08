@@ -13,5 +13,5 @@ setup(
     author_email='mjrao520@gmail.com',
     description='Convert XML to python Dict',
     long_description=open("README.rst").read(),
-    url='https://github.com/mjrao/xml2dict'
+    url='https://github.com/mjrao/pyxml2dict'
 )
