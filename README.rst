@@ -30,10 +30,10 @@ Usage
       xml2dict = XML2Dict()
       print xml2dict.fromstring(xml_str1)
       print xml2dict.fromstring(xml_str2)
-	  #if you want namespace to be removed then:
+      #if you want namespace to be removed then:
       xml_str3 = """<root id="1" xmlns="somenamespace"><items><item>1</item><item>2</item></items></root>"""
-	  print xml2dict.fromstring(xml_str3)
-	  print xml2dict.fromstring(xml_str3, remove_namespace=True)
+      print xml2dict.fromstring(xml_str3)
+      print xml2dict.fromstring(xml_str3, remove_namespace=True)
 	  
 **print result**
 
