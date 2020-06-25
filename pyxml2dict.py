@@ -25,11 +25,11 @@ class XML2Dict(object):
         if children:  # Determine whether the node is empty, recursive boundary conditions
             dd = defaultdict(list)
             for dc in map(self._parse_node, children):  # recursive traverse processing tree
-                for k, v in dc.iteritems():
+                for k, v in dc.items():
                     dd[k].append(v)
-            d = {ttag: {k: v[0] if len(v) == 1 else v for k, v in dd.iteritems()}}  # handle child node
+            d = {ttag: {k: v[0] if len(v) == 1 else v for k, v in dd.items()}}  # handle child node
         if t.attrib:  # handle attributes,prefix all of the stored attributes @
-            d[ttag].update(('@' + k, v) for k, v in t.attrib.iteritems())
+            d[ttag].update(('@' + k, v) for k, v in t.attrib.items())
         if t.text:
             text = t.text.strip().encode(self._coding)  # strip blank space
             if children or t.attrib:
