@@ -1,4 +1,4 @@
-===============
+
 pyxml2dict
 ===============
 
@@ -13,14 +13,14 @@ Installing
 ===============
 Install with pip:
 
-::
+```
 
     $pip install pyxml2dict
-
+```
 Usage
 ===============
 
-::
+```
 
   from pyxml2dict import XML2Dict
 
@@ -34,10 +34,11 @@ Usage
       xml_str3 = """<root id="1" xmlns="somenamespace"><items><item>1</item><item>2</item></items></root>"""
       print xml2dict.fromstring(xml_str3)
       print xml2dict.fromstring(xml_str3, remove_namespace=True)
+```
 	  
 **print result**
 
-::
+```
 
  {'root': {'items': {'item': ['1', '2']}, '@id': '1'}}
 
@@ -46,6 +47,8 @@ Usage
  {'{somenamespace}root': {'@id': '1', '{somenamespace}items': {'{somenamespace}item': ['1', '2']}}}
  
  {'root': {'items': {'item': ['1', '2']}, '@id': '1'}}
+ ```
+
 Thanks
 ===============
 
